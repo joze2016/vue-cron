@@ -648,7 +648,7 @@
                 this.day.cronDaysBeforeEomMinus = Number(str.match(/L-(\d+)/)[1]);
             } else if (/\d+W/.test(str)) {
                 this.day.cronEvery = "10";
-                this.day.cronDaysNearestWeekday = Number(str.match(/(\d+)W/))[1];
+                this.day.cronDaysNearestWeekday = Number(str.match(/(\d+)W/)[1]);
             } else {
                 this.resolveComma(this.day, str, "5");
             }
